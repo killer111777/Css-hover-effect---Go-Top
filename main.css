@@ -1,0 +1,76 @@
+@import url(reset.css);
+
+.content{
+  margin: 20px;
+  width: 350px;
+  height: 300px;
+  background-color: red;
+  overflow: hidden;
+}
+
+.img{
+  width:  350px;
+  height: 300px;
+  background-color: #cecece;
+  overflow: hidden;
+  -webkit-transition: height .4s;
+}
+
+.img > img{
+  display: block;
+  margin: 70px auto;
+  -webkit-transition: margin-top .4s;
+  
+}
+.info{
+  width: 350px;
+  height: 0px;
+  background-color: #223c80;
+  overflow: hidden;
+  -webkit-transition: height .4s;
+}
+
+.info > h2{
+  margin: 15px;
+  font-size: 1.1em;
+  color: #d35a61;
+}
+
+
+.info > p{
+  color: #fff;
+  margin-left: 15px;
+}
+
+.info > a{
+  float: right;
+  margin-top: -45px;
+  margin-right: 5px;
+  padding: 10px 30px;
+  background-color: #d35a61;
+  font-size: .8em;
+  color: #fff;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.info > a:hover{
+  background-color: #000;
+}
+
+
+.content:hover > .img{
+  height: 210px;
+}
+
+.content:hover > .info{
+  height: 90px;
+}
+
+.content:hover > .img > img{
+  margin-top: 40px;
+}
+
+
+
+
